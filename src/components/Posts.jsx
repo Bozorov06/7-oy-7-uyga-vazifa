@@ -13,7 +13,7 @@ const Posts = ({ posts, isLoading, error }) => {
   return (
     <div className="pb-10">
       {posts?.length > 0 ? (
-        <div className="container grid grid-cols-3 gap-5">
+        <div className="container grid grid-cols-3 gap-10">
           {posts.map((p) => (
             <PostItem post={p} key={p.id} />
           ))}
